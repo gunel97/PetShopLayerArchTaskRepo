@@ -1,0 +1,15 @@
+C:\Users\Lenovo\source\repos\PetShopLayerArch\PetShop.BusinessLogic\bin\Debug\net8.0\PetShop.BusinessLogic.deps.json
+C:\Users\Lenovo\source\repos\PetShopLayerArch\PetShop.BusinessLogic\bin\Debug\net8.0\PetShop.BusinessLogic.dll
+C:\Users\Lenovo\source\repos\PetShopLayerArch\PetShop.BusinessLogic\bin\Debug\net8.0\PetShop.BusinessLogic.pdb
+C:\Users\Lenovo\source\repos\PetShopLayerArch\PetShop.BusinessLogic\bin\Debug\net8.0\PetShop.DA.dll
+C:\Users\Lenovo\source\repos\PetShopLayerArch\PetShop.BusinessLogic\bin\Debug\net8.0\PetShop.DA.pdb
+C:\Users\Lenovo\source\repos\PetShopLayerArch\PetShop.BusinessLogic\obj\Debug\net8.0\PetShop.BusinessLogic.csproj.AssemblyReference.cache
+C:\Users\Lenovo\source\repos\PetShopLayerArch\PetShop.BusinessLogic\obj\Debug\net8.0\PetShop.BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\source\repos\PetShopLayerArch\PetShop.BusinessLogic\obj\Debug\net8.0\PetShop.BusinessLogic.AssemblyInfoInputs.cache
+C:\Users\Lenovo\source\repos\PetShopLayerArch\PetShop.BusinessLogic\obj\Debug\net8.0\PetShop.BusinessLogic.AssemblyInfo.cs
+C:\Users\Lenovo\source\repos\PetShopLayerArch\PetShop.BusinessLogic\obj\Debug\net8.0\PetShop.BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\PetShopLayerArch\PetShop.BusinessLogic\obj\Debug\net8.0\PetShop..C73F157C.Up2Date
+C:\Users\Lenovo\source\repos\PetShopLayerArch\PetShop.BusinessLogic\obj\Debug\net8.0\PetShop.BusinessLogic.dll
+C:\Users\Lenovo\source\repos\PetShopLayerArch\PetShop.BusinessLogic\obj\Debug\net8.0\refint\PetShop.BusinessLogic.dll
+C:\Users\Lenovo\source\repos\PetShopLayerArch\PetShop.BusinessLogic\obj\Debug\net8.0\PetShop.BusinessLogic.pdb
+C:\Users\Lenovo\source\repos\PetShopLayerArch\PetShop.BusinessLogic\obj\Debug\net8.0\ref\PetShop.BusinessLogic.dll
