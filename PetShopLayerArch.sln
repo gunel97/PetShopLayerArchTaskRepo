@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36408.4 d17.14
+VisualStudioVersion = 17.14.36408.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetShop.MVC", "PetShop.MVC\PetShop.MVC.csproj", "{AF50CA56-551D-40E7-9694-0751BD06B3F8}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetShop.DA", "PetShop.DA\PetShop.DA.csproj", "{2688433D-EF5B-428C-9F86-A1E883B6C1FA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetShop.BusinessLogic", "PetShop.BusinessLogic\PetShop.BusinessLogic.csproj", "{BC01FAF1-3606-4A7E-8BD2-11460418E43C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mailing", "..\..\..\Desktop\CodeAcademy\Mailing-master\Mailing-master\Mailing.csproj", "{33BB1F5C-D557-F759-F85E-4F2BD2993A2B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,10 @@ Global
 		{BC01FAF1-3606-4A7E-8BD2-11460418E43C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC01FAF1-3606-4A7E-8BD2-11460418E43C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC01FAF1-3606-4A7E-8BD2-11460418E43C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33BB1F5C-D557-F759-F85E-4F2BD2993A2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33BB1F5C-D557-F759-F85E-4F2BD2993A2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33BB1F5C-D557-F759-F85E-4F2BD2993A2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33BB1F5C-D557-F759-F85E-4F2BD2993A2B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

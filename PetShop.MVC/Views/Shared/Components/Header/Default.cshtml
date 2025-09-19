@@ -1,6 +1,33 @@
 ﻿@model HeaderViewModel
+<div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasCart" aria-labelledby="My Cart">
+    <div class="offcanvas-header justify-content-center">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="order-md-last">
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                <span class="text-primary">Your cart</span>
+                <span class="badge bg-primary rounded-circle pt-2" id="basketTotalCount">3</span>
+            </h4>
+            <ul class="list-group mb-3" id="basketContainer">
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                    <div>
+                        <h6 class="my-0">test</h6>
+                        <small class="text-body-secondary">Brief description</small>
+                    </div>
+                    <span class="text-body-secondary">$10</span>
+                </li>
 
-@* @await Component.InvokeAsync("Cart"); *@
+                <li class="list-group-item d-flex justify-content-between">
+                    <span class="fw-bold">Total (USD)</span>
+                    <strong id="basketTotalPrice">$20</strong>
+                </li>
+            </ul>
+
+            <a asp-controller="cart" class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</a>
+        </div>
+    </div>
+</div>
 
 <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasSearch"
      aria-labelledby="Search">
@@ -29,8 +56,8 @@
 
             <div class="col-sm-4 col-lg-3 text-center text-sm-start">
                 <div class="main-logo">
-                    <a asp-controller="home" asp-action="index">
-                        <img src="~/images/@Model.Bio?.LogoUrl" alt="logo" class="img-fluid">
+                    <a href="index.html">
+                        <img src="~/images/logo.png" alt="logo" class="img-fluid">
                     </a>
                 </div>
             </div>
@@ -51,11 +78,11 @@
             <div class="col-sm-8 col-lg-4 d-flex justify-content-end gap-5 align-items-center mt-4 mt-sm-0 justify-content-center justify-content-sm-end">
                 <div class="support-box text-end d-none d-xl-block">
                     <span class="fs-6 secondary-font text-muted">Phone</span>
-                    <h5 class="mb-0">@Model.Bio?.PhoneNumber</h5>
+                    <h5 class="mb-0">+980-34984089</h5>
                 </div>
                 <div class="support-box text-end d-none d-xl-block">
                     <span class="fs-6 secondary-font text-muted">Email</span>
-                    <h5 class="mb-0">@Model.Bio?.EmailAddress</h5>
+                    <h5 class="mb-0">waggy@gmail.com</h5>
                 </div>
 
 
@@ -74,12 +101,23 @@
             <div class="d-flex d-lg-none align-items-end mt-3">
                 <ul class="d-flex justify-content-end list-unstyled m-0">
                     <li>
-                        <a class="mx-3">
-                            <iconify-icon icon="healthicons:person" class="fs-4"></iconify-icon>
+                        <a href="account.html" class="mx-3">
+                            <iconify-icon icon="healthicons:person" class="fs-4">
+                            </iconify-icon>
+
                         </a>
+                        @if (User.Identity!.IsAuthenticated)
+                        {
+                            <span>@User.Identity.Name</span>
+                            <a asp-controller="account" asp-action="logout">Logout</a>
+                        }
+                        else
+                        {
+                            <a asp-controller="account" asp-action="login">Login</a>
+                        }
                     </li>
                     <li>
-                        <a asp-controller="wishlist" asp-action="index" class="mx-3">
+                        <a href="wishlist.html" class="mx-3">
                             <iconify-icon icon="mdi:heart" class="fs-4"></iconify-icon>
                         </a>
                     </li>
@@ -98,6 +136,7 @@
                         <a href="#" class="mx-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch"
                            aria-controls="offcanvasSearch">
                             <iconify-icon icon="tabler:search" class="fs-4"></iconify-icon>
+                            </span>
                         </a>
                     </li>
                 </ul>
@@ -126,7 +165,7 @@
 
                     <ul class="navbar-nav menu-list list-unstyled d-flex gap-md-3 mb-0">
                         <li class="nav-item">
-                            <a asp-controller="home" asp-action="index" class="nav-link active">Home</a>
+                            <a href="index.html" class="nav-link active">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" role="button" id="pages" data-bs-toggle="dropdown"
@@ -138,7 +177,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a asp-controller="shop" asp-action="index" class="dropdown-item">
+                                    <a href="shop.html" class="dropdown-item">
                                         Shop<span class="badge bg-success text-dark ms-2">PRO</span>
                                     </a>
                                 </li>
@@ -153,7 +192,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a asp-controller="wishlist" asp-action="index" class="dropdown-item">
+                                    <a href="wishlist.html" class="dropdown-item">
                                         Wishlist<span class="badge bg-success text-dark ms-2">PRO</span>
                                     </a>
                                 </li>
@@ -183,7 +222,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item">
+                                    <a href="account.html" class="dropdown-item">
                                         Account<span class="badge bg-success text-dark ms-2">PRO</span>
                                     </a>
                                 </li>
@@ -205,7 +244,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a asp-controller="shop" asp-action="index" class="nav-link">Shop</a>
+                            <a href="shop.html" class="nav-link">Shop</a>
                         </li>
                         <li class="nav-item">
                             <a href="blog.html" class="nav-link">Blog</a>
@@ -221,16 +260,15 @@
                     <div class="d-none d-lg-flex align-items-end">
                         <ul class="d-flex justify-content-end list-unstyled m-0">
                             <li>
-                                <a class="mx-3">
-                                    <iconify-icon icon="healthicons:person" class="fs-4"></iconify-icon>
+                                <a href="account.html" class="mx-3">
+                                    <iconify-icon icon="healthicons:person" class="fs-4">
+                                    </iconify-icon>
+
                                 </a>
                                 @if (User.Identity!.IsAuthenticated)
                                 {
                                     <span>@User.Identity.Name</span>
-                                    <form method="post" asp-controller="account" asp-action="logout">
-                                        <button type="submit">Logout</button>
-                                    </form>
-                                    @* <a asp-controller="account" asp-action="logout">Log Out</a> *@
+                                    <a asp-controller="account" asp-action="logout">Logout</a>
                                 }
                                 else
                                 {
@@ -238,7 +276,7 @@
                                 }
                             </li>
                             <li>
-                                <a asp-controller="wishlist" asp-action="index" class="mx-3">
+                                <a href="wishlist.html" class="mx-3">
                                     <iconify-icon icon="mdi:heart" class="fs-4"></iconify-icon>
                                 </a>
                             </li>
@@ -247,7 +285,7 @@
                                 <a href="#" class="mx-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
                                    aria-controls="offcanvasCart">
                                     <iconify-icon icon="mdi:cart" class="fs-4 position-relative"></iconify-icon>
-                                    <span class="position-absolute translate-middle badge rounded-circle bg-primary pt-2">
+                                    <span class="position-absolute translate-middle badge rounded-circle bg-primary pt-2" id="basketTotalBadge">
                                         03
                                     </span>
                                 </a>

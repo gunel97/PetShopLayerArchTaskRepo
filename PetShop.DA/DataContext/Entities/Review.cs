@@ -4,8 +4,8 @@ public class Review : TimeStample
 {
     public float Rate { get; set; }
     public string? ImageName { get; set; }
-    public string Name { get; set; } = null!;
-    public string Email { get; set; }=null!;
+    public string? Name { get; set; } 
+    public string? Email { get; set; }
     public string Description { get; set; } = null!;
     public ReviewStatus ReviewStatus {  get; set; }
     public int ProductId { get; set; }

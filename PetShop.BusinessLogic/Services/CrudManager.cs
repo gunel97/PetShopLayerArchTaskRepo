@@ -45,6 +45,14 @@ public class CrudManager<TEntity, TViewModel, TCreateViewModel, TUpdateViewModel
         return viewModels;
     }
 
+    public virtual async Task<TViewModel?> GetAsync(Expression<Func<TEntity, bool>> predicate, Func<IQueryable<TEntity>, IIncludableQueryable<TEntity, object>>? include = null, bool AsNoTracking = false)
+    {
+        var entity = await Repository.GetAsync(predicate, include, AsNoTracking);
+        var viewModel = Mapper.Map<TViewModel>(entity);
+
+        return viewModel;
+    }
+
     public virtual async Task<TViewModel?> GetByIdAsync(int id)
     {
         var entity = await Repository.GetByIdAsync(id);

@@ -6,6 +6,7 @@ C:\Users\Lenovo\source\repos\PetShopLayerArch\PetShop.DA\obj\Debug\net8.0\PetSho
 C:\Users\Lenovo\source\repos\PetShopLayerArch\PetShop.DA\obj\Debug\net8.0\PetShop.DA.AssemblyInfoInputs.cache
 C:\Users\Lenovo\source\repos\PetShopLayerArch\PetShop.DA\obj\Debug\net8.0\PetShop.DA.AssemblyInfo.cs
 C:\Users\Lenovo\source\repos\PetShopLayerArch\PetShop.DA\obj\Debug\net8.0\PetShop.DA.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\PetShopLayerArch\PetShop.DA\obj\Debug\net8.0\PetShop.DA.sourcelink.json
 C:\Users\Lenovo\source\repos\PetShopLayerArch\PetShop.DA\obj\Debug\net8.0\PetShop.DA.dll
 C:\Users\Lenovo\source\repos\PetShopLayerArch\PetShop.DA\obj\Debug\net8.0\refint\PetShop.DA.dll
 C:\Users\Lenovo\source\repos\PetShopLayerArch\PetShop.DA\obj\Debug\net8.0\PetShop.DA.pdb

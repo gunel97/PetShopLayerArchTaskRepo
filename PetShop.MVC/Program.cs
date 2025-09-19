@@ -1,7 +1,12 @@
+using Mailing.MailKitImplementations;
+using Mailing;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using PetShop.BusinessLogic;
+using PetShop.BusinessLogic.Constants;
 using PetShop.DA;
 using PetShop.DA.DataContext;
-using PetShop.BusinessLogic;
+using PetShop.DA.DataContext.Entities;
 using System.Threading.Tasks;
 namespace PetShop.MVC
 {
@@ -22,6 +27,25 @@ namespace PetShop.MVC
 
             builder.Services.AddDataAccessLayerServices(builder.Configuration);
             builder.Services.AddBusinessLogicLayerServices();
+
+            builder.Services.AddIdentity<AppUser, IdentityRole>(options =>
+            {
+                options.Password.RequiredLength = 4;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireLowercase = false;
+                options.Password.RequireUppercase = false;
+
+                //options.User.RequireUniqueEmail = true;
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
+                options.Lockout.MaxFailedAccessAttempts = 3;
+            }).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
+
+            builder.Services.AddScoped<IMailService, MailKitMailService>();
+
+            FilePathConstants.ReviewImagePath = Path.Combine(builder.Environment.WebRootPath, "images", "reviews");
+            FilePathConstants.ProductImagePath = Path.Combine(builder.Environment.WebRootPath, "images", "products");
+            FilePathConstants.ProfileImagePath = Path.Combine(builder.Environment.WebRootPath, "images", "users");
+
 
             var app = builder.Build();
 

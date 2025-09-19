@@ -8,6 +8,7 @@ C:\Users\Lenovo\source\repos\PetShopLayerArch\PetShop.BusinessLogic\obj\Debug\ne
 C:\Users\Lenovo\source\repos\PetShopLayerArch\PetShop.BusinessLogic\obj\Debug\net8.0\PetShop.BusinessLogic.AssemblyInfoInputs.cache
 C:\Users\Lenovo\source\repos\PetShopLayerArch\PetShop.BusinessLogic\obj\Debug\net8.0\PetShop.BusinessLogic.AssemblyInfo.cs
 C:\Users\Lenovo\source\repos\PetShopLayerArch\PetShop.BusinessLogic\obj\Debug\net8.0\PetShop.BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\PetShopLayerArch\PetShop.BusinessLogic\obj\Debug\net8.0\PetShop.BusinessLogic.sourcelink.json
 C:\Users\Lenovo\source\repos\PetShopLayerArch\PetShop.BusinessLogic\obj\Debug\net8.0\PetShop..C73F157C.Up2Date
 C:\Users\Lenovo\source\repos\PetShopLayerArch\PetShop.BusinessLogic\obj\Debug\net8.0\PetShop.BusinessLogic.dll
 C:\Users\Lenovo\source\repos\PetShopLayerArch\PetShop.BusinessLogic\obj\Debug\net8.0\refint\PetShop.BusinessLogic.dll

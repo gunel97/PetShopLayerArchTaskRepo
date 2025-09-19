@@ -163,6 +163,11 @@ wwwroot\images\post-thumb-2.html
 wwwroot\images\reviewer-1.jpg
 wwwroot\images\reviewer-2.jpg
 wwwroot\images\reviewer-3.jpg
+wwwroot\images\reviews\1.jpg
+wwwroot\images\reviews\2.jpg
+wwwroot\images\reviews\smiling-business-woman-with-folded-hands-against-white-wall-toothy-smile-crossed-arms-576a19bf-99d0-409a-848c-973ebe17d833-.jpg
+wwwroot\images\users\man-portrait-d3c82cd1-8334-4106-bd4c-1332c21d5bfd-.jpg
+wwwroot\js\basket.js
 wwwroot\js\bootstrap.bundle.min.js
 wwwroot\js\iconify-icon.min.js
 wwwroot\js\jquery-1.11.0.min.js
