@@ -19,6 +19,10 @@ public class AppDbContext:IdentityDbContext<AppUser>
     public DbSet<Review> Reviews { get; set; } = null!;
     public DbSet<Bio> Bios { get; set; } = null!;
     public DbSet<Social> Socials { get; set; } = null!;
+    public DbSet<Post> Posts { get; set; } = null!;
+    public DbSet<Comment> Comments { get; set; } = null!;
+    public DbSet<PostTag> PostTags { get; set; } = null!;
+    public DbSet<PostImage> PostImages { get; set; } = null!;
 
     protected override void OnModelCreating(ModelBuilder builder)
     {

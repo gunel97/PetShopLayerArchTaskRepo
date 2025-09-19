@@ -7,7 +7,7 @@ public class Review : TimeStample
     public string? Name { get; set; } 
     public string? Email { get; set; }
     public string Description { get; set; } = null!;
-    public ReviewStatus ReviewStatus {  get; set; }
+    public Status ReviewStatus {  get; set; }
     public int ProductId { get; set; }
     public Product? Product { get; set; }
     public string? AppUserId { get; set; }

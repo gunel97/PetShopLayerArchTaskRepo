@@ -57,7 +57,7 @@
             <div class="col-sm-4 col-lg-3 text-center text-sm-start">
                 <div class="main-logo">
                     <a href="index.html">
-                        <img src="~/images/logo.png" alt="logo" class="img-fluid">
+                        <img src="~/images/@Model.Bio?.LogoUrl" alt="logo" class="img-fluid">
                     </a>
                 </div>
             </div>
@@ -78,11 +78,11 @@
             <div class="col-sm-8 col-lg-4 d-flex justify-content-end gap-5 align-items-center mt-4 mt-sm-0 justify-content-center justify-content-sm-end">
                 <div class="support-box text-end d-none d-xl-block">
                     <span class="fs-6 secondary-font text-muted">Phone</span>
-                    <h5 class="mb-0">+980-34984089</h5>
+                    <h5 class="mb-0">@Model.Bio?.PhoneNumber</h5>
                 </div>
                 <div class="support-box text-end d-none d-xl-block">
                     <span class="fs-6 secondary-font text-muted">Email</span>
-                    <h5 class="mb-0">waggy@gmail.com</h5>
+                    <h5 class="mb-0">@Model.Bio?.EmailAddress</h5>
                 </div>
 
 
@@ -117,7 +117,7 @@
                         }
                     </li>
                     <li>
-                        <a href="wishlist.html" class="mx-3">
+                        <a asp-controller="wishlist" asp-action="index" class="mx-3">
                             <iconify-icon icon="mdi:heart" class="fs-4"></iconify-icon>
                         </a>
                     </li>
@@ -192,7 +192,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="wishlist.html" class="dropdown-item">
+                                    <a asp-controller="wishlist" asp-action="index" class="dropdown-item">
                                         Wishlist<span class="badge bg-success text-dark ms-2">PRO</span>
                                     </a>
                                 </li>
@@ -202,7 +202,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="blog.html" class="dropdown-item">
+                                    <a asp-controller="blog" asp-action="index" class="dropdown-item">
                                         Blog<span class="badge bg-success text-dark ms-2">PRO</span>
                                     </a>
                                 </li>
@@ -247,7 +247,7 @@
                             <a href="shop.html" class="nav-link">Shop</a>
                         </li>
                         <li class="nav-item">
-                            <a href="blog.html" class="nav-link">Blog</a>
+                            <a asp-controller="blog" asp-action="index" class="nav-link">Blog</a>
                         </li>
                         <li class="nav-item">
                             <a href="contact.html" class="nav-link">Contact</a>
@@ -276,7 +276,7 @@
                                 }
                             </li>
                             <li>
-                                <a href="wishlist.html" class="mx-3">
+                                <a asp-controller="wishlist" asp-action="index" class="mx-3">
                                     <iconify-icon icon="mdi:heart" class="fs-4"></iconify-icon>
                                 </a>
                             </li>

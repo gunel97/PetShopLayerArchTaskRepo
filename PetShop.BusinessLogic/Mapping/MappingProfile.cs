@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using PetShop.BusinessLogic.Services;
 using PetShop.BusinessLogic.ViewModels;
 using PetShop.DA.DataContext.Entities;
 
@@ -19,6 +20,13 @@ public class MappingProfile:Profile
             .ReverseMap();
         CreateMap<Product, ProductCreateViewModel>().ReverseMap();
         CreateMap<Product, ProductUpdateViewModel>().ReverseMap();
+
+        CreateMap<Post, PostViewModel>()
+            .ForMember(x => x.ImageNames, opt => opt.MapFrom(src => src.Images.Select(i => i.ImageName).ToList()))
+            .ForMember(x => x.TagNames, opt => opt.MapFrom(src => src.PostTags.Select(t => t.Tag != null ? t.Tag.Name : "").ToList()))
+            .ReverseMap();
+        CreateMap<Post, PostCreateViewModel>().ReverseMap();
+        CreateMap<Post, PostUpdateViewModel>().ReverseMap();
 
         CreateMap<Bio, BioViewModel>().ReverseMap();
         CreateMap<Bio, BioCreateViewModel>().ReverseMap();

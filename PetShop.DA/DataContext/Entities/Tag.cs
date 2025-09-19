@@ -4,6 +4,7 @@ public class Tag:TimeStample
 {
     public string Name { get; set; } = null!;
     public ICollection<ProductTag> ProductTags { get; set; } = [];
+    public ICollection<PostTag> PostTags { get; set; } = [];
 
 }
 

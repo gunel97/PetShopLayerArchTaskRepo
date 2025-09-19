@@ -1,6 +1,6 @@
 ﻿namespace PetShop.DA.DataContext.Entities;
 
-public enum ReviewStatus
+public enum Status
 {
     Pending,
     Approved,

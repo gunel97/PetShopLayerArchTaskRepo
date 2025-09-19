@@ -31,7 +31,7 @@ namespace PetShop.MVC.Controllers
                 .Include(x=>x.Category!)
                 .Include(x=>x.Images)
                 .Include(x=>x.ProductTags).ThenInclude(x=>x.Tag!)
-                .Include(x=>x.Reviews.Where(x=>x.ReviewStatus==ReviewStatus.Approved))
+                .Include(x=>x.Reviews.Where(x=>x.ReviewStatus==Status.Approved))
                 .ThenInclude(x=>x.AppUser!));
 
             return View(model);
@@ -57,7 +57,7 @@ namespace PetShop.MVC.Controllers
                 createViewModel.AppUserId = user!.Id;
             }
 
-            createViewModel.ReviewStatus = ReviewStatus.Pending;
+            createViewModel.ReviewStatus = Status.Pending;
 
             await _reviewService.CreateAsync(createViewModel);
 

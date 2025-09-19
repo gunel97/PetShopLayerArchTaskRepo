@@ -27,6 +27,7 @@ namespace PetShop.DA
             services.AddScoped(typeof(IRepository<>), typeof(EfCoreRepository<>));
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<ICategoryRepository, CategoryRepository>();
+            services.AddScoped<IPostRepository, PostRepository>();
 
             return services;
         }

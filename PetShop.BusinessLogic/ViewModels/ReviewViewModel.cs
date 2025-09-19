@@ -17,7 +17,6 @@ public class ReviewViewModel
     public string? AppUserProfileImageName { get; set; }
     public DateTime CreatedAt { get; set; }
 }
-
 public class ReviewCreateViewModel
 {
     public float Rate { get; set; }
@@ -29,7 +28,7 @@ public class ReviewCreateViewModel
     public string? AppUserId { get; set; }
 
     public IFormFile? ImageFile { get; set; }
-    public ReviewStatus ReviewStatus { get; set; }
+    public Status ReviewStatus { get; set; }
 }
 
 public class ReviewUpdateViewModel
@@ -43,7 +42,7 @@ public class ReviewUpdateViewModel
     public int ProductId { get; set; }
     public string? AppUserId { get; set; }
     public IFormFile? ImageFile { get; set; }
-    public ReviewStatus ReviewStatus { get; set; }
+    public Status ReviewStatus { get; set; }
 }
 
 
