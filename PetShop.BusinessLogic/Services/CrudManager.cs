@@ -65,7 +65,7 @@ public class CrudManager<TEntity, TViewModel, TCreateViewModel, TUpdateViewModel
         return viewModel;
     }
 
-    public virtual async  Task<bool> UpdateAsync(int id, TUpdateViewModel model)
+    public virtual async Task<bool> UpdateAsync(int id, TUpdateViewModel model)
     {
         var entity = await Repository.GetByIdAsync(id);
 
